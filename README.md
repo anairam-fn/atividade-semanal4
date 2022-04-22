@@ -137,17 +137,17 @@ listOfBooks.filter(bookFilter);  // so irá retornar os livros que têm a propri
 - Retorna o valor do **primeiro** elemento do array que satisfizer a função provida.
 
 ~~~javascript
-const bookFinder = listOfBooks.find(books => books.year === 1982);
+const bookFinder = listOfBooks.find(books => books.year === 2004);
 console.log(bookFinder)
 
 //retorna o elemento: 
 {
-  title: 'The Color Purple',
-  autor: 'Alice Walker',
-  year: 1982,
-  pages: 288,
-  read: false
-}
+    title: "The Third Life of Grange Copeland",
+    autor: "Alice Walker",
+    year: 2004,
+    pages: 288,
+    read: true,
+ }
 ~~~
 
 ##### .sort()
