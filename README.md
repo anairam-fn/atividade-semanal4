@@ -1,6 +1,6 @@
 ## Resumo Semana 04:
 
-#### Array
+### Array
 
 - Com um array pode-se armazenar vários dados em um só lugar.
 
@@ -10,7 +10,7 @@
 const sandwich = ["peanut butter", "jelly", "bread"];
 ```
 
-##### Acessar dados de um array:
+#### Acessar dados de um array:
 
 - Pode-se acessar dados de um array usando indexes.
 
@@ -22,7 +22,7 @@ const array = [50, 60, 70];
     const data = array[1];    //  e data tem o valor de 60
 ~~~
 
-##### Modificar array:
+#### Modificar array:
 
 - Os arrays podem ser modificados livremente, mesmo que tenham sido declarados com const.
 
@@ -31,9 +31,9 @@ const ourArray = [50, 40, 30];
     ourArray[0] = 15;           // ourArray agora tem o valor [15, 40, 30]
 ~~~
 
-##### Métodos de iteração:
+#### Métodos de iteração:
 
-###### .push()
+##### .push()
 
 - É uma maneira de anexar dados ao **final** de um array.
 
@@ -46,7 +46,7 @@ const arr2 = ["Stimpson", "J", "cat"];
 // arr2 agora tem o valor de ["Stimpson", "J", "cat", ["happy", "joy"]].
 ~~~
 
-###### .pop()
+##### .pop()
 
 - Retira um valor do **final** de um array.
 
@@ -59,7 +59,7 @@ const threeArr = [1, 4, 6];
     console.log(threeArr);           //  vai mostrar o valor [1, 4];
 ~~~
 
-###### .shift()
+##### .shift()
 
 - Funciona do mesmo jeito que o .pop(), mas remove o **primeiro** elemento do array, ao invés do último.
 
@@ -70,7 +70,7 @@ const ourArray = ["Stimpson", "J", ["cat"]];
 // removedFromOurArray tem o valor "Stimpson" e ourArray tem o valor ["J", ["cat"]];
 ~~~
 
-###### .unshift()
+##### .unshift()
 
 - Adiciona um elemento no **início** de um array.
 
@@ -80,7 +80,7 @@ const ourArray = ["Stimpson", "J", "cat"];
     ourArray.unshift("Happy");            //  ourArray teria o valor ["Happy", "J", "cat"];
 ~~~
 
-###### .map()
+##### .map()
 
 - Mapeia a lista e retorna um novo array com as informações passadas na função, sem alterar a array original.
 
@@ -113,7 +113,7 @@ listOfBooks.map((book) => console.log(book.title))  // mapeia os títulos dos li
 listOfBooks.map((book) => console.log(book.autor)) //  mapeia os autores dos livros
 ~~~
 
-###### .filter()
+##### .filter()
 
 - Retorna um novo array com os itens (elementos) filtrados.
 
@@ -132,7 +132,7 @@ listOfBooks.filter(bookFilter);  // so irá retornar os livros que têm a propri
                                 //  "read" recebendo o valor true
 ~~~
 
-###### .find()
+##### .find()
 
 - Retorna o valor do **primeiro** elemento do array que satisfizer a função provida.
 
@@ -150,7 +150,7 @@ console.log(bookFinder)
 }
 ~~~
 
-###### .sort()
+##### .sort()
 
 - Ordena o array (de acordo com a tabela Unicode) e o retorna.
 
@@ -174,21 +174,21 @@ listOfBooks.sort(function(a, b) {
 console.log(listOfBooks)   // retornará o array ordenando os títulos em ordem alfabética
 ~~~
 
-###### .reduce()
+##### .reduce()
 
 - Permite realizar operações matemáticas com os itens de um array e retorna o resultado dessa operação.
 
-#### Objetos
+### Objetos
 
 - São dados que contém uma coleção de propriedades organizadas em chaves de maneira estruturada.
 
 - As propriedades podem ser armazenadas como strings e números.
 
-##### Acessar propriedades de um objeto:
+#### Acessar propriedades de um objeto:
 
 - Pode-se acessar as propriedades de um objeto de duas maneira. Através do dot notation (.) e do bracket notation ([]).
 
-###### Dot notation
+##### Dot notation
 
 - É usado quando se sabe o nome da propriedade que se quer acessar;
 
@@ -202,7 +202,7 @@ const testObj = {
 const hatValue = testObj.hat;    // "ballcap"
 ~~~
 
-###### Bracket notation
+##### Bracket notation
 
 - É usado quando a propriedade do objeto possui um espaço no nome, mas também pode ser utilizado nas propriedades sem espaços.
 
@@ -218,7 +218,7 @@ myObj['More Space'];  -->  seria a string "Spock"
 myObj["NoSpace"];     -->  seria a string "USS Enterprise"
 ~~~
 
-##### Atualizar propriedades do objeto
+#### Atualizar propriedades do objeto
 
 - Depois de criar um objeto, pode-se atualizar suas propriedades a qualquer momento, assim como se atualizaria qualquer outra variável.
 
@@ -237,7 +237,7 @@ OR                           // mudou-se o "name" para Pluto;
 myDog["name"] = "Pluto";
 ~~~
 
-##### Adicionar novas propriedades ao objeto
+#### Adicionar novas propriedades ao objeto
 
 - Pode-se adicionar novas propriedades a objetos do mesmo jeito que o modifica.
 
@@ -254,7 +254,7 @@ OR                        // adiciona a propriedade "bark" ao objeto;
 myDog["bark"] = "woof";
 ~~~
 
-##### Deletar propriedades de um objeto
+#### Deletar propriedades de um objeto
 
 - Também utilizando dot ou bracket notation.
 
@@ -272,11 +272,11 @@ OR                          //  irá deletar a propriedade "bark";
 delete ourDog["bark"];
 ~~~
 
-#### Loop
+### Loop
 
 - Pode-se executar um código várias vezes utilizando um loop.
 
-##### For
+#### For
 
 - É o tipo mais comum de loop no JavaScript.
 
@@ -303,7 +303,7 @@ for (let i = 0; i < 5; i++) {
  }
 ~~~
 
-##### While
+#### While
 
 - O loop é executado enquanto uma condição especifica é verdadera e ele para quando essa condição não é mais verdadeira.
 
@@ -317,7 +317,7 @@ let i = 0;
   }
 ~~~
 
-###### Do... while
+##### Do... while
 
 - Nesse caso, primeiro ele faz uma passagem do código dentro do loop, não importa o que aconteça e, então, continuará a executar o loop enquanto a condição especificada for avaliada como verdadeira
 
